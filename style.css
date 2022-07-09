@@ -5,33 +5,37 @@
     margin: 0;
 }
 
-body {
-    background-image: url(./images/bg.JPG);
+body{
+    background-image: url('/images/bg.JPG');
     background-repeat: no-repeat;
-    height: 100vh;
     background-size: cover;
 }
 
 #vanta {
-    top: 0;
+    margin-top: 0px;
+    padding-top: 0px;
     left: 0;
     right: 0;
+    top: 0%;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
-main>img {
+div {
+    top: 0;
+    margin: 0px;
+}
+
+.prof {
     height: 130px;
-    width: auto;
+    border-radius: 90%;
     border: 2px solid black;
-    border-radius: 50%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 130px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1.5em;
 }
 
 .bakeneko {
@@ -44,6 +48,8 @@ main>img {
     margin-right: auto;
 }
 
+
+
 h1 {
     margin-bottom: 1em;
     margin-top: 0.5em;
@@ -51,35 +57,35 @@ h1 {
     font-size: 0.8em;
     font-weight: bold;
     border-radius: 1em;
-    background-color: #000a;
+    background-color: rgba(26, 26, 26, 0.667);
     color: #fff;
     padding: 0.3em 0.6em;
-    border: 1px solid #fffa;
+    border: 1px solid rgba(0, 0, 0, 0.667);
     backdrop-filter: blur(10px) saturate(160%) contrast(180%);
     -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
 }
 
-ul {
+.ull {
     box-sizing: border-box;
     padding: 2em 2em 0em 2em;
     list-style: none;
 }
 
-ul>li {
+.ull>li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255,0.7);
+    background-color: rgba(219, 214, 214, 0.7);
     margin-bottom: 3.5em;
     padding: 0.75em 0px;
-    max-width: 480px;
+    max-width: 280px;
     margin-left: auto;
     margin-right: auto;
-    border: none;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 25px;
 }
 
-ul>li>a {
+.ull>li>a {
     text-decoration: none;
     font-size: 20px;
     text-align: center;
@@ -89,9 +95,10 @@ ul>li>a {
     align-items: center;
     padding: auto;
     margin: auto;
+    color: black;
 }
 
-ul>li>a>img {
+.ull>li>a>img {
     /* padding-top: 5px; */
     margin-right: 0.5rem;
 }
